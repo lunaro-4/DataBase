@@ -26,9 +26,9 @@
       <TextField fx:id="labelTxt" layoutX="467.0" layoutY="92.0" prefHeight="25.0" prefWidth="100.0" promptText="label" />
       <TextField fx:id="countryTxt" layoutX="467.0" layoutY="129.0" prefHeight="25.0" prefWidth="100.0" promptText="country" />
       <ChoiceBox fx:id="categoryChoice" layoutX="467.0" layoutY="164.0" prefHeight="25.0" prefWidth="100.0" />
-      <TextField fx:id="exposureTxt" layoutX="467.0" layoutY="200.0" prefHeight="25.0" prefWidth="100.0" promptText="exposure" />
-      <TextField fx:id="strengthTxt" layoutX="467.0" layoutY="236.0" prefHeight="25.0" prefWidth="100.0" promptText="strength" />
-      <TextField fx:id="sugarTxt" layoutX="467.0" layoutY="272.0" prefHeight="25.0" prefWidth="100.0" promptText="sugar" />
+      <TextField fx:id="exposureTxt" layoutX="467.0" layoutY="200.0" prefHeight="25.0" prefWidth="100.0" promptText="exposure" text="0" />
+      <TextField fx:id="strengthTxt" layoutX="467.0" layoutY="236.0" prefHeight="25.0" prefWidth="100.0" promptText="strength" text="0" />
+      <TextField fx:id="sugarTxt" layoutX="467.0" layoutY="272.0" onAction="#dbPush" prefHeight="25.0" prefWidth="100.0" promptText="sugar" text="12" />
       <Button layoutX="484.0" layoutY="321.0" mnemonicParsing="false" onAction="#dbPush" text="AddToDb" />
    </children>
 </AnchorPane>

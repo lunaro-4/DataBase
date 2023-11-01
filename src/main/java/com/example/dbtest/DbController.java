@@ -79,10 +79,11 @@ public class DbController {
                     categoryChoice.getValue(),
                     Integer.parseInt(exposureTxt.getText()),
                     Float.parseFloat(strengthTxt.getText()),
-                    Integer.parseInt(sugarTxt.getText())))
+                    Integer.parseInt(sugarTxt.getText()))) {
+                ;
+            } else {
                 debugText.setText("Push Successful!");
-            else
-                debugText.setText("Push Failed!");
+            }
 
         } catch (SQLException e) {
             debugText.setText(e.getMessage());
